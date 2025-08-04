@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neobpo - Plataforma de Treinamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Neobpo - Plataforma de Treinamento</h1>
+        <nav>
+            <ul>
+                <li><a href="#reciclagem">Reciclagem</a></li>
+                <li><a href="#simplificador">Simplificador de Texto</a></li>
+                <li><a href="#avaliacoes">Gestão de Avaliações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="reciclagem">
+            <h2>Reciclagem de Treinamento</h2>
+            <div class="content-input">
+                <label for="video-url">Insira a URL do vídeo (YouTube ou Google Drive):</label>
+                <input type="text" id="video-url" placeholder="Ex.: https://www.youtube.com/watch?v=ID">
+                <button onclick="embedVideo()">Carregar Vídeo</button>
+            </div>
+            <div id="video-container"></div>
+            <div class="content-input">
+                <label for="quiz-url">Insira a URL do quiz (Google Forms):</label>
+                <input type="text" id="quiz-url" placeholder="Ex.: https://forms.gle/ID">
+                <button onclick="embedQuiz()">Carregar Quiz</button>
+            </div>
+            <div id="quiz-container"></div>
+        </section>
+
+        <section id="simplificador">
+            <h2>Simplificador de Conteúdo</h2>
+            <textarea id="input-text" placeholder="Insira o texto complexo aqui..."></textarea>
+            <button onclick="simplifyText()">Simplificar Texto</button>
+            <div id="output-text"></div>
+        </section>
+
+        <section id="avaliacoes">
+            <h2>Gestão de Avaliações</h2>
+            <p>Use a planilha modelo para registrar notas e progresso:</p>
+            <a href="https://docs.google.com/spreadsheets/d/1K_3Z7a7F8G6k9JqL5mN8pQ9rStU7vWx/edit?usp=sharing" target="_blank">Acessar Planilha Modelo</a>
+            <p>Instruções para relatórios:</p>
+            <ul>
+                <li>Preencha as colunas: Nome, Data, Nota, Dificuldades, Progresso.</li>
+                <li>Use "Inserir > Gráfico" para criar relatórios visuais.</li>
+                <li>Exporte como PDF em "Arquivo > Fazer download > PDF".</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Neobpo - Plataforma de Treinamento</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
