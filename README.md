@@ -1,4 +1,4 @@
-# Neobpo - Plataforma de Treinamento
+# Teste - Plataforma de Treinamento
 
 Este é um site para o departamento de treinamento da Neobpo, projetado para reciclagem de operadores, simplificação de conteúdos e gestão de avaliações. Hospedado no GitHub Pages, é gratuito, responsivo e intuitivo.
 
